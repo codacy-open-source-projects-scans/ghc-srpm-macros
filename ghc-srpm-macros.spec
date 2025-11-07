@@ -4,11 +4,11 @@
 
 Name:           ghc-srpm-macros
 Version:        1.9.2
-Release:        1%{?dist}
+Release:        3%{?dist}
 Summary:        RPM macros for building Haskell source packages
 
 License:        GPL-2.0-or-later
-Url:            https://src.fedoraproject.org/rpms/ghc-srpm-macros
+URL:            https://src.fedoraproject.org/rpms/ghc-srpm-macros
 BuildArch:      noarch
 
 Source0:        %{macrosfile}
@@ -34,6 +34,12 @@ install -p -D -m 0644 %{SOURCE0} %{buildroot}/%{macros_dir}/%{macrosfile}
 
 
 %changelog
+* Wed Jul 23 2025 Fedora Release Engineering <releng@fedoraproject.org> - 1.9.2-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_43_Mass_Rebuild
+
+* Thu Jan 16 2025 Fedora Release Engineering <releng@fedoraproject.org> - 1.9.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_42_Mass_Rebuild
+
 * Wed Sep 18 2024 Jens Petersen <petersen@redhat.com> - 1.9.2-1
 - haskell_setup -q: also undefine ghc_smp_mflags
 
